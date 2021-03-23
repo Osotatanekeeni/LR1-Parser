@@ -483,12 +483,13 @@ public class Parser {
 
             if (iterator != 0) 
             {
-                System.out.print("["+stackSymbol.elementAt(0)+" "+stackState.elementAt(0)+"]");
+                System.out.print("["+stackSymbol.elementAt(0)+" "+stackState.elementAt(0));
                 //iterate over every element in the stack
                 for (int i = 1; i < stackSymbol.size(); i++) 
                 {
-                    System.out.print("["+stackSymbol.elementAt(i)+" "+stackState.elementAt(i)+"]");
+                    System.out.print(" "+stackSymbol.elementAt(i)+" "+stackState.elementAt(i));
                 }
+                System.out.print("]");
                 System.out.print("  " + leftExpression + "\n");
                 
             }
